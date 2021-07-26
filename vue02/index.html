@@ -27,8 +27,11 @@
         import './directives/focus.directive.js'
         import MessageList from './components/MessageList.js'
         import './filters/datetime.filter.js'
+        import lifecyclelogger from './plugins/lifecycle-logger.plugin.js'
+        Vue.use(lifecyclelogger, {beforeMount: false});
         let vm = new Vue({
             el: '#app',
+            name: 'MessageApp',
             data: {
                 messages: [],
                 newMessage: ''
