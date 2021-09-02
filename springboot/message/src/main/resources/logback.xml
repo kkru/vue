@@ -5,8 +5,7 @@
             <Pattern>%d{HH:mm:ss:SSS} %-5level %logger{36} - %msg%n</Pattern>
         </layout>
     </appender>
-    <include resource="org/springframework/boot/logging/logback/base.xml"/>
-    <root level="INFO">
+    <root level="INFO" additivity="false">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>
