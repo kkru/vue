@@ -2,6 +2,7 @@ node_modules/
 bower_components/
 target/
 *.log
+*.class
 
 build/
 dist/
